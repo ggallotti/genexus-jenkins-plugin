@@ -233,6 +233,11 @@ public final class GXSChangeLogSet extends ChangeLogSet {
             date = DateUtils.fromUTCstring(utcDate);
         }        
         
+		@Exported
+        public String getComment() {
+            return msg;
+        }
+		
         @Override @Exported
         public String getMsg() {
             return msg;
